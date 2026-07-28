@@ -206,9 +206,9 @@ report:
 # 4.5 筛选策略
 # ===============================================================
 filter:
-  method: "keyword"                     # 筛选方式（二选一）
+  method: "ai"                     # 筛选方式（二选一）
                                        # keyword = 关键词匹配，不调用 AI，不消耗 token，但规则固定
-                                       #           词组定义在 config/frequency_words.txt
+ #           词组定义在 config/frequency_words.txt
                                        # ai = AI 智能分类，更灵活但每次运行消耗 token
                                        #      兴趣描述在 config/ai_interests.txt，需配合下方 ai_filter
 
@@ -448,7 +448,7 @@ ai_analysis:
   max_news_for_analysis: 150        # 参与分析的新闻数量上限（控制 token 成本的关键项）
                                     # 热榜优先占用配额，RSS 用剩余配额，独立展示区不受此限制
 
-  include_rss: false                # 是否包含 RSS 内容进行分析（true=包含, false=不包含）
+  include_rss: true                # 是否包含 RSS 内容进行分析（true=包含, false=不包含）
   include_standalone: true          # 是否纳入独立展示区数据（true=纳入, false=不纳入）
 
   include_rank_timeline: true       # 排名时间线详细程度
