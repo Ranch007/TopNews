@@ -300,8 +300,8 @@ notification:
       msg_type: "markdown"            # 消息类型：markdown(群机器人) | text(个人微信应用)
 
     telegram:
-      bot_token: ""                   # Telegram Bot Token
-      chat_id: ""                     # Telegram Chat ID
+      bot_token: "TELEGRAM_BOT_TOKEN"                   # Telegram Bot Token
+      chat_id: "TELEGRAM_CHAT_ID" # Telegram Chat ID
 
     email:
       from: ""                        # 发件人邮箱地址
