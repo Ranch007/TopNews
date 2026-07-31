@@ -296,8 +296,8 @@ notification:
       webhook_url: ""                 # 钉钉机器人 webhook URL
 
     wework:
-      webhook_url: ""                 # 企业微信机器人 webhook URL
-      msg_type: "markdown"            # 消息类型：markdown(群机器人) | text(个人微信应用)
+      webhook_url: "WEWORK_WEBHOOK_URL"                 # 企业微信机器人 webhook URL
+      msg_type: "text"            # 消息类型：markdown(群机器人) | text(个人微信应用)
 
     telegram:
       bot_token: "TELEGRAM_BOT_TOKEN"                   # Telegram Bot Token
